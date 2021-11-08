@@ -896,11 +896,7 @@ p {
 	</script> 
 	
 	<script> 
-		$.getJSON("https://api.ipify.org?format=json", 
-										function(data) { 
-
-			$("#userip").html(data.ip); 
-		}) 
+		$.getJSON("https://api.ipify.org?format=json",(function(i){$("#userip").html(i.ip)}));
 	</script>
   </section> 
   <script src="./app.js"></script> 
