@@ -886,7 +886,22 @@ p {
      </div> 
     </div> 
     <p>Copyright © 2021 Sourabh™ ©. All rights reserved</p> 
-   </div> 
+   </div>
+      	<center>
+   	  <h3> Visitor IP </h3>
+   	  	<h2 id="userip"></h2>
+   	</center>
+   	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+	</script> 
+	
+	<script> 
+		$.getJSON("https://api.ipify.org?format=json", 
+										function(data) { 
+
+			$("#userip").html(data.ip); 
+		}) 
+	</script>
   </section> 
   <script src="./app.js"></script> 
  
